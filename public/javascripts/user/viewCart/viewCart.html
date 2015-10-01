@@ -1,0 +1,29 @@
+<div class="col-md-12">
+
+<div>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div>
+      <ul class="nav navbar-nav">
+        <li><a href="#/">Home</a></li>
+        <li class="active"><a>Cart</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="" ng-click = "cartCtrl.placeOrder()">Place Order</a></li>
+        <li><a>Total Amount:{{cartCtrl.total|currency:"&#8377;"}}/-</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+<h1>Order Summary</h1>
+<p ng-repeat="pizza in cartCtrl.pizzaList">
+Name: {{pizza.name}}<br>
+Quantity: {{pizza.qty}} <br>
+Amount: {{pizza.cost}} <br>
+
+<a href="" ng-click="cartCtrl.delete(pizza.id, pizza.cost)">Remove</a><br>
+</p>
+<center><a class="navbar-brand" href="#/">Add More</a></center>
+
+</div>

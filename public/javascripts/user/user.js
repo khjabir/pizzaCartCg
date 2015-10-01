@@ -12,6 +12,16 @@ angular.module('user').config(function($routeProvider) {
     		templateUrl: 'user/pizzaDetails/pizzaDetails.html',
     		controller: 'pizzaDetailCtrl',
     		controllerAs: 'detailCtrl'
+    	})
+    	.when('/order', {
+    		templateUrl: 'user/viewCart/viewCart.html',
+    		controller: 'viewCartCtrl',
+    		controllerAs: 'cartCtrl'
+    	})
+    	.when('/userdetails', {
+    		templateUrl: 'user/userDetails/userDetails.html',
+    		controller: 'userDetailCtrl',
+    		controllerAs: 'userCtrl'
     	});
     /* Add New Routes Above */
 
