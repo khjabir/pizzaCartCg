@@ -1,4 +1,4 @@
-angular.module('pizzaApp', ['ui.bootstrap', 'ui.utils', 'ngRoute', 'ngAnimate', 'user']);
+angular.module('pizzaApp', ['ui.bootstrap', 'ui.utils', 'ngRoute', 'ngAnimate', 'user', 'admin']);
 
 angular.module('pizzaApp').config(function($routeProvider) {
 

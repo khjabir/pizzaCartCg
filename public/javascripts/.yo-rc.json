@@ -22,6 +22,10 @@
       {
         "name": "user",
         "file": "user/user.js"
+      },
+      {
+        "name": "admin",
+        "file": "admin/admin.js"
       }
     ]
   }

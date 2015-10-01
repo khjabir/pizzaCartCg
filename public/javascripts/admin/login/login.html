@@ -1,0 +1,17 @@
+<div class="col-md-12">
+
+<div class="container">
+<h1> Admin Login </h1>
+  <form role="form">
+    <div class="form-group" ng-form>
+      <input type="text" class="form-control" ng-model = "adminCtrl.user.name" placeholder="Username">
+    </div>
+    <div class="form-group">
+      <input type="password" class="form-control" ng-model = "adminCtrl.user.password" placeholder="Password">
+    </div>
+      <div ng-bind="adminCtrl.msg" style="color:red"></div>
+    <a ng-click="adminCtrl.validate()" class="btn btn-default">Login</a>
+  </form>
+</div>
+
+</div>
