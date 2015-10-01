@@ -13,6 +13,11 @@ angular.module('admin').config(function($routeProvider) {
     	controller: 'ViewordersCtrl',
     	controllerAs: 'ordersCtrl'
     });
+    $routeProvider.when('/delivered', {
+    	templateUrl: 'admin/viewDelivered/viewDelivered.html',
+    	controller: 'ViewdeliveredCtrl',
+    	controllerAs: 'delivered'
+    });
     /* Add New Routes Above */
 
 });
