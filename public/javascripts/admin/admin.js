@@ -8,6 +8,11 @@ angular.module('admin').config(function($routeProvider) {
     		controller: 'AdminCtrl',
     		controllerAs: 'adminCtrl'
     	});
+    $routeProvider.when('/viewOrders', {
+    	templateUrl: 'admin/viewOrders/viewOrders.html',
+    	controller: 'ViewordersCtrl',
+    	controllerAs: 'ordersCtrl'
+    });
     /* Add New Routes Above */
 
 });
