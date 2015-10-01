@@ -3,7 +3,7 @@ angular.module('pizzaApp', ['ui.bootstrap', 'ui.utils', 'ngRoute', 'ngAnimate', 
 angular.module('pizzaApp').config(function($routeProvider) {
 
     /* Add New Routes Above */
-    $routeProvider.otherwise({redirectTo:'/home'});
+    $routeProvider.otherwise({redirectTo:'/'});
 
 });
 
