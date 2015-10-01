@@ -1,0 +1,42 @@
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-animate.js"></script>
+    <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.13.4.js"></script>
+
+
+<div class="col-md-12">
+
+<div>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a>Home</a></li>
+          <li><a href="#/order">View Cart</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#/admin">Admin Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+<div>
+  <h3>Pizza Cart</h3>
+  <div style="height: 265px">
+    <carousel interval="pizzaCtrl.myInterval" no-wrap="pizzaCtrl.noWrapSlides">
+      <slide ng-repeat="slide in pizzaCtrl.slides" active="slide.active">
+        <img ng-src="{{slide.image}}" style="margin:auto;" width="275">
+      </slide>
+    </carousel>
+  </div>
+</div>
+
+<div class="img" ng-repeat="pizza in pizzaCtrl.list | filter:query | orderBy:'name'">
+	<a href = "#/pizza/{{pizza.name}}" style="text-decoration:none;">
+	  <img ng-src="{{pizza.image}}" width="100">
+	</a>
+	<br>{{pizza.name}}
+</div>
+
+</div>
